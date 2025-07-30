@@ -1,9 +1,9 @@
-import Isograma from "./components/Isograma";
+import Marquesina from "./components/Marquesina";
 
 
 function App() {
   return (
-    <Isograma/>
+    <Marquesina/>
   )
 }
 
