@@ -1,9 +1,9 @@
-import Marquesina from "./components/Marquesina";
+import Hackers from "./components/Hackers";
 
 
 function App() {
   return (
-    <Marquesina/>
+    <Hackers/>
   )
 }
 
