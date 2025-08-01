@@ -1,9 +1,9 @@
-import Hackers from "./components/Hackers";
+import IsLetter from "./components/IsLetter";
 
 
 function App() {
   return (
-    <Hackers/>
+    <IsLetter/>
   )
 }
 
