@@ -5,35 +5,26 @@
 // ["A","B","A","C","C","C","C"] -> ["A","C"]
 // [1,2,3,1,2] // -> [1,2]
 
-export default function EsParView() {
-  const lettersArray = ["A", "B", "A", "C", "C", "C", "C"];
-  const pares = [];
-  const impares = [];
-  let lettersWithKey = {};
-  console.log(lettersWithKey);
-
-  function findEvenElements(array: string[]) {
-    array.forEach((item) => {
-      if (lettersWithKey[item]) {
-        lettersWithKey[item]++;
+export default function EsPar() {
+  function isEven(array: []) {
+    const pares = array.reduce((acc, item) => {
+      if (acc[item]) {
+        acc[item]++;
       } else {
-        lettersWithKey[item] = 1;
+        acc[item] = 1;
       }
-    });
-    const entries = Object.entries(lettersWithKey);
+      return acc;
+    }, {});
 
-    entries.forEach((item) => {
-      const count = item[0];
-      if (item[1] % 2 === 0) {
-        pares.push(count);
-      } else {
-        impares.push(count);
-      }
-    });
-    console.log(pares);
+    const evens = Object.keys(pares).filter(key => {
+      return pares[key] % 2 === 0 //acceder al valor asociado a esa key en el objeto original
+    })
+
+    return evens
   }
 
-  findEvenElements(lettersArray);
-
-  return <p>Hola</p>;
+  
+  console.log(`cuales son par de este array [1, 1, 1, 2, 2, 3, 3, 3, 3]:`, isEven([1, 1, 1, 2, 2, 3, 3, 3, 3]))
+  console.log(`cuales son par de este array ["A","B","A","C","C","C","C"]:`, isEven(["A","B","A","C","C","C","C"]))
+  return <div>EsPar</div>;
 }

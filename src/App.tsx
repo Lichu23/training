@@ -1,9 +1,9 @@
-import IsLetter from "./components/IsLetter";
+import EsPar from "./components/EsPar";
 
 
 function App() {
   return (
-    <IsLetter/>
+    <EsPar/>
   )
 }
 
