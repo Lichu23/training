@@ -1,9 +1,9 @@
-import EsPar from "./components/EsPar";
+import NewIsEven from "./components/NewIsEven";
 
 
 function App() {
   return (
-    <EsPar/>
+    <NewIsEven/>
   )
 }
 
