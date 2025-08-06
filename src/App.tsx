@@ -1,9 +1,9 @@
-import NewIsEven from "./components/NewIsEven";
+import { IsIsograma } from "./components/isIsograma";
 
 
 function App() {
   return (
-    <NewIsEven/>
+    <IsIsograma/>
   )
 }
 
