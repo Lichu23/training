@@ -1,9 +1,9 @@
-import { IsIsograma } from "./components/isIsograma";
+import LettersByNumbers from "./components/lettersByNumbers";
 
 
 function App() {
   return (
-    <IsIsograma/>
+    <LettersByNumbers/>
   )
 }
 

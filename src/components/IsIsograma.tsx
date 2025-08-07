@@ -1,7 +1,7 @@
 //@ts-nocheck
 // Isograma
 // Un isograma es una palabra que no tiene letras repetidas. Consideraciones Adicionales:
-
+//unicode combining diacritical marks range y la flag significa que encuentra todas las coincidencias no solo la primera que encuentre.
 // Un string vacío es un isograma.
 // La función tiene que ser case insensitive e ignorar acentos.
 // Si el string tiene mas de una palabra retornar false.
@@ -19,17 +19,16 @@ export const IsIsograma = () => {
     const wordClean = word
       .toLocaleLowerCase()
       .normalize("NFD")
-      .replace(/[\u0300-\u036f]/g, "").trim()
+      .replace(/[\u0300-\u036f]/g, "")
+      .trim()
 
-      const lenghtWord = wordClean.split(" ")
-
+    const lenghtWord = wordClean.split(" ");
 
     if (lenghtWord.length >= 2) return false;
 
     if (wordClean === "") return true;
 
     const wordsRepeat = [];
-
     for (const letter of wordClean) {
       if (wordsRepeat.includes(letter)) {
         return false;
