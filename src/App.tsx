@@ -1,9 +1,9 @@
-import LettersByNumbers from "./components/lettersByNumbers";
+import StringEndsWith from "./components/StringEndsWith";
 
 
 function App() {
   return (
-    <LettersByNumbers/>
+    <StringEndsWith/>
   )
 }
 
