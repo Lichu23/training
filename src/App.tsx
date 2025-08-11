@@ -1,9 +1,9 @@
-import StringEndsWith from "./components/StringEndsWith";
+import ZerosToFinal from "./components/ZerosToFinal";
 
 
 function App() {
   return (
-    <StringEndsWith/>
+    <ZerosToFinal/>
   )
 }
 
