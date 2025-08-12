@@ -1,9 +1,9 @@
-import ZerosToFinal from "./components/ZerosToFinal";
+import Continents from "./components/Continents";
 
 
 function App() {
   return (
-    <ZerosToFinal/>
+    <Continents/>
   )
 }
 
