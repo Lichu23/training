@@ -1,9 +1,9 @@
-import Continents from "./components/Continents";
+import { InterviewExersise2 } from "./components/Palindromo";
 
 
 function App() {
   return (
-    <Continents/>
+    <InterviewExersise2 />
   )
 }
 
