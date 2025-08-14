@@ -1,9 +1,9 @@
-import MarquesinaComponent from "./components/MarquesinaComponent";
+import AvoidReRenders from "./interview-exersises/AvoidReRenders";
 
 
 function App() {
   return (
-    <MarquesinaComponent />
+    <AvoidReRenders />
   )
 }
 
