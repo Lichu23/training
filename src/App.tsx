@@ -1,9 +1,9 @@
-import { InterviewExersise2 } from "./components/Palindromo";
+import MarquesinaComponent from "./components/MarquesinaComponent";
 
 
 function App() {
   return (
-    <InterviewExersise2 />
+    <MarquesinaComponent />
   )
 }
 
