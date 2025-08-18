@@ -1,12 +1,15 @@
-import { Provider } from "react-redux";
-import { Cart } from "./interview-exersises/InterviewRedux/Cart";
-import { store } from "./interview-exersises/InterviewRedux/store";
+// import { Provider } from "react-redux";
+// import { Cart } from "./interview-exersises/InterviewRedux/Cart";
+// import { store } from "./interview-exersises/InterviewRedux/store";
+import IsOod from "./components/IsOod";
 
 function App() {
   return (
-    <Provider store={store}>
-      <Cart />
-    </Provider>
+   
+   <IsOod/>
+    // <Provider store={store}>
+    //   <Cart />
+    // </Provider>
   );
 }
 
