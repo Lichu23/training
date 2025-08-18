@@ -1,12 +1,13 @@
 // import { Provider } from "react-redux";
 // import { Cart } from "./interview-exersises/InterviewRedux/Cart";
 // import { store } from "./interview-exersises/InterviewRedux/store";
-import IsOod from "./components/IsOod";
+
+import MapForReduce from "./interview-exersises/MapForReduce";
 
 function App() {
   return (
    
-   <IsOod/>
+   <MapForReduce/>
     // <Provider store={store}>
     //   <Cart />
     // </Provider>
