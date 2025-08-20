@@ -2,12 +2,12 @@
 // import { Cart } from "./interview-exersises/InterviewRedux/Cart";
 // import { store } from "./interview-exersises/InterviewRedux/store";
 
-import GiraSarbalap from "./components/GiraSarbalap";
+import Emotions from "./components/Emotions";
 
 function App() {
   return (
    
-   <GiraSarbalap/>
+   <Emotions/>
     // <Provider store={store}>
     //   <Cart />
     // </Provider>
