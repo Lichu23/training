@@ -1,16 +1,15 @@
-// import { Provider } from "react-redux";
-// import { Cart } from "./interview-exersises/InterviewRedux/Cart";
-// import { store } from "./interview-exersises/InterviewRedux/store";
 
-import Emotions from "./components/Emotions";
+
+import { Provider } from "react-redux";
+import Counter from "./interview-exersises/redux/Counter";
+import { store } from "./interview-exersises/redux/CounterSlice";
 
 function App() {
   return (
-   
-   <Emotions/>
-    // <Provider store={store}>
-    //   <Cart />
-    // </Provider>
+    <Provider store={store}>
+      <Counter />
+    </Provider>
+
   );
 }
 

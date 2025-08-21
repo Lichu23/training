@@ -12,7 +12,7 @@
 // si es false, entonces será ascendente (de Súper Triste a Súper Feliz)
 
 export default function Emotions() {
-  const arrEmotions = [":D","T_T", ":("];
+  const arrEmotions = [":D", "T_T", ":("];
 
   function sortEmotions(array, order) {
     const rank = {
@@ -20,19 +20,16 @@ export default function Emotions() {
       ":)": 4,
       ":|": 3,
       ":(": 2,
-      "T_T": 1,
+      T_T: 1,
     };
 
     return array.sort((a, b) => {
-      return order ?  rank[b] - rank[a] : rank[a] - rank[b] 
+      return order ? rank[b] - rank[a] : rank[a] - rank[b];
     });
   }
 
   //redo
-  console.log("Sort emotions:", sortEmotions(arrEmotions, true));
-  return (
-    <div>
-      <p>hola</p>
-    </div>
-  );
+  return console.log("Sort emotions:", sortEmotions(arrEmotions, true));
 }
+
+Emotions();
