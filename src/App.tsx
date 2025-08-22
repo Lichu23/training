@@ -1,15 +1,16 @@
+//@ts-nocheck
 
-
-import { Provider } from "react-redux";
-import Counter from "./interview-exersises/redux/Counter";
-import { store } from "./interview-exersises/redux/CounterSlice";
+// import { Provider } from "react-redux";
+// import LoginForm from "./interview-exersises/Login/LoginForm";
+// import { store } from "./interview-exersises/redux/CounterSlice";
+import { ThemeProvider } from "./interview-exersises/theme-context/ThemeProvider";
+import ThemeView from "./interview-exersises/theme-context/ThemeView";
 
 function App() {
   return (
-    <Provider store={store}>
-      <Counter />
-    </Provider>
-
+    <ThemeProvider >
+      <ThemeView />
+    </ThemeProvider>
   );
 }
 

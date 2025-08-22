@@ -38,7 +38,7 @@ const developers = [
   },
 ];
 
-function getLanguageMount(array) {
+function getLanguageCount(array) {
   const languagesMount = array.map((developer) => {
       return developer.language
   })
@@ -55,6 +55,6 @@ function getLanguageMount(array) {
   return result
 }
 
-console.log(`Cuantos developers por cada lenguaje hay?:`,getLanguageMount(developers))
+console.log(`Cuantos developers por cada lenguaje hay?:`,getLanguageCount(developers))
 
 // => { C: 2, JavaScript: 1, Ruby: 1 }
