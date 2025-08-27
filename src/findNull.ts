@@ -32,26 +32,28 @@ const desarrolladores = [
   },
 ];
 
+
 function providerQuestion(developArr) {
-  return developArr.map((dev) => {
-    const nullsEntry = Object.entries(dev).find(
-      ([key, value]) => value === null
+
+  return developArr.map((developer) => {
+    const propertyName = Object.entries(developer).find(
+      ([key, val]) => val === null
     );
 
-    if (nullsEntry) {
-      const [propName] = nullsEntry;
 
+    if (propertyName) {
       return {
-        ...dev,
-        question: `Hi, could you please provide your ${propName}`,
+        ...developer,
+        question: `Hi, could you please provide your ${propertyName[0]}`,
       };
+    } else {
+      return null;
     }
 
-    return null;
-  });
+  }).filter(Boolean)
 }
 
-console.log(`Encuentra los nulls ya grega question prop:`, providerQuestion(desarrolladores))
+console.log(`agrega question a los que tengan null:`, providerQuestion(desarrolladores))
 /*
 [
   { firstName: null, lastName: 'I.', country: 'Argentina', continent: 'Americas', age: 35, language: 'Java', 
