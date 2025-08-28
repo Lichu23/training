@@ -22,7 +22,7 @@ const desarrolladores = [
   },
 ];
 
-function findMedia(array) {
+function findAverage(array) {
   const ages = array.map((desarrollador) => {
     return desarrollador.age;
   });
@@ -38,4 +38,4 @@ function findMedia(array) {
   return media
 }
 
-console.log(`Cual es la edad media entre 30 y 70?:`, findMedia(desarrolladores))
+console.log(`Cual es la edad media entre 30 y 70?:`, findAverage(desarrolladores))
