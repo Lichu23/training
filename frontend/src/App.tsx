@@ -1,9 +1,9 @@
-import Exercise5 from "./9 sep 25/Exercise5";
+import Parent from "./12 sep 25/Parent";
 
 
 function App() {
   return (
-    <Exercise5/>
+    <Parent/>
   );
 }
 
