@@ -1,13 +1,5 @@
 //@ts-nocheck
 
-// Crea un componente de React que reciba una lista de nombres como props y muestre:
-
-// Todos los nombres en una lista ordenada (<ol>).
-
-// Un input de texto que permita filtrar los nombres en tiempo real (case insensitive).
-
-// Si no hay coincidencias, mostrar el mensaje: "No se encontraron resultados.".
-
 
 
 import React from 'react'
